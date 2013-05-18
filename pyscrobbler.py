@@ -28,7 +28,7 @@ def login(user, password):
         session_key = root.find("./session/key").text
         return session_key
     else:
-        return False
+        return None
 
 
 def submit(artist, track, timestamp=None):
